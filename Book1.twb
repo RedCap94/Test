@@ -1,0 +1,2915 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.25.0114.1153                               -->
+<workbook original-version='18.1' source-build='2024.3.3 (20243.25.0114.1153)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Median weekly income' inline='true' name='federated.1tdzc7f0gwuqau1h64ivt0w4xe18' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Median weekly income' name='textscan.13ur9kb1m194011h20o5912ug0ts'>
+            <connection class='textscan' directory='G:/Extras Freelance Work/Work/Somenath Da/IFN585 Tableau Analysis/Copy1' filename='Median weekly income.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.13ur9kb1m194011h20o5912ug0ts' name='Median weekly income.csv' table='[Median weekly income#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='State' ordinal='0' />
+            <column datatype='integer' name='Year' ordinal='1' />
+            <column datatype='integer' name='Income' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Median weekly income.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[Median weekly income.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Median weekly income.csv_6689A73BCBDE4AB5B2FDAEBC9C321FA9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Median weekly income.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Median weekly income.csv_6689A73BCBDE4AB5B2FDAEBC9C321FA9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Income</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Income]</local-name>
+            <parent-name>[Median weekly income.csv]</parent-name>
+            <remote-alias>Income</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Median weekly income.csv_6689A73BCBDE4AB5B2FDAEBC9C321FA9]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <column caption='Median weekly income.csv' datatype='table' name='[__tableau_internal_object_id__].[Median weekly income.csv_6689A73BCBDE4AB5B2FDAEBC9C321FA9]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/sapch/AppData/Local/Temp/TableauTemp/#TableauTemp_047g8nm0pnksvp14o42nu0f0u6o6.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='03/19/2025 08:07:35 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>State</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Median weekly income.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Median weekly income.csv_6689A73BCBDE4AB5B2FDAEBC9C321FA9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Median weekly income.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Median weekly income.csv_6689A73BCBDE4AB5B2FDAEBC9C321FA9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Income</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Income]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Income</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Median weekly income.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Median weekly income.csv_6689A73BCBDE4AB5B2FDAEBC9C321FA9]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Median weekly income.csv' id='Median weekly income.csv_6689A73BCBDE4AB5B2FDAEBC9C321FA9'>
+            <properties context=''>
+              <relation connection='textscan.13ur9kb1m194011h20o5912ug0ts' name='Median weekly income.csv' table='[Median weekly income#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='State' ordinal='0' />
+                  <column datatype='integer' name='Year' ordinal='1' />
+                  <column datatype='integer' name='Income' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='Median weekly rent' inline='true' name='federated.07lkd1p1cqo5et1gajgvz1k3pzeq' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Median weekly rent' name='textscan.08vyck51l61dph1egasif0mujmtj'>
+            <connection class='textscan' directory='G:/Extras Freelance Work/Work/Somenath Da/IFN585 Tableau Analysis/Copy1' filename='Median weekly rent.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='Median weekly income' name='textscan.1oxg0bq1ug9s9a17hk3050cly0io'>
+            <connection class='textscan' directory='G:/Extras Freelance Work/Work/Somenath Da/IFN585 Tableau Analysis/Copy1' filename='Median weekly income.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.08vyck51l61dph1egasif0mujmtj' name='Median weekly rent.csv' table='[Median weekly rent#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='State' ordinal='0' />
+            <column datatype='integer' name='Year' ordinal='1' />
+            <column datatype='integer' name='Value' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Median weekly rent.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[Median weekly rent.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Median weekly rent.csv_A7F6DFCDE63145949952CF575D1BFD12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Median weekly rent.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Median weekly rent.csv_A7F6DFCDE63145949952CF575D1BFD12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Value</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Value]</local-name>
+            <parent-name>[Median weekly rent.csv]</parent-name>
+            <remote-alias>Value</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Median weekly rent.csv_A7F6DFCDE63145949952CF575D1BFD12]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='None' datatype='integer' name='[Rental (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='1' formula='[Value]' peg='0' size='40.5' />
+      </column>
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Rental' datatype='integer' name='[Value]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <column caption='Median weekly rent.csv' datatype='table' name='[__tableau_internal_object_id__].[Median weekly rent.csv_A7F6DFCDE63145949952CF575D1BFD12]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/sapch/AppData/Local/Temp/TableauTemp/#TableauTemp_1dp7pdc0p5za351gr445s0lal2e5.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='03/19/2025 08:07:56 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>State</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Median weekly rent.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Median weekly rent.csv_A7F6DFCDE63145949952CF575D1BFD12]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Median weekly rent.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Median weekly rent.csv_A7F6DFCDE63145949952CF575D1BFD12]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Value</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Value]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Value</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Median weekly rent.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Median weekly rent.csv_A7F6DFCDE63145949952CF575D1BFD12]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Median weekly rent.csv' id='Median weekly rent.csv_A7F6DFCDE63145949952CF575D1BFD12'>
+            <properties context=''>
+              <relation connection='textscan.08vyck51l61dph1egasif0mujmtj' name='Median weekly rent.csv' table='[Median weekly rent#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='State' ordinal='0' />
+                  <column datatype='integer' name='Year' ordinal='1' />
+                  <column datatype='integer' name='Value' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='structural_problems_vs_remoteness' inline='true' name='federated.1vw8qqn0349lcs10n3cop1vbsxkf' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='structural_problems_vs_remoteness' name='textscan.1pjmlc01ecatow1bqq2er01nc41y'>
+            <connection class='textscan' directory='G:/Extras Freelance Work/Work/Somenath Da/IFN585 Tableau Analysis/Copy1' filename='structural_problems_vs_remoteness.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+      </connection>
+      <aliases enabled='yes' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='false' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/sapch/AppData/Local/Temp/TableauTemp/#TableauTemp_0r7n8sw09f2w4w192vllf1tjevnl.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='03/19/2025 08:08:23 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Remoteness</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Remoteness]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Remoteness</remote-alias>
+              <ordinal>0</ordinal>
+              <family>structural_problems_vs_remoteness.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[structural_problems_vs_remoteness.csv_CA42A6421B634F8A9F33ACC97B1AC085]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Rising damp</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Rising damp]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Rising damp</remote-alias>
+              <ordinal>1</ordinal>
+              <family>structural_problems_vs_remoteness.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[structural_problems_vs_remoteness.csv_CA42A6421B634F8A9F33ACC97B1AC085]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Major cracks in walls/floors</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Major cracks in walls/floors]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Major cracks in walls/floors</remote-alias>
+              <ordinal>2</ordinal>
+              <family>structural_problems_vs_remoteness.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[structural_problems_vs_remoteness.csv_CA42A6421B634F8A9F33ACC97B1AC085]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sinking/moving foundations</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Sinking/moving foundations]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sinking/moving foundations</remote-alias>
+              <ordinal>3</ordinal>
+              <family>structural_problems_vs_remoteness.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[structural_problems_vs_remoteness.csv_CA42A6421B634F8A9F33ACC97B1AC085]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sagging floors</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Sagging floors]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sagging floors</remote-alias>
+              <ordinal>4</ordinal>
+              <family>structural_problems_vs_remoteness.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[structural_problems_vs_remoteness.csv_CA42A6421B634F8A9F33ACC97B1AC085]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Walls or windows not straight</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Walls or windows not straight]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Walls or windows not straight</remote-alias>
+              <ordinal>5</ordinal>
+              <family>structural_problems_vs_remoteness.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[structural_problems_vs_remoteness.csv_CA42A6421B634F8A9F33ACC97B1AC085]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Wood rot/termite damage</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Wood rot/termite damage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Wood rot/termite damage</remote-alias>
+              <ordinal>6</ordinal>
+              <family>structural_problems_vs_remoteness.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[structural_problems_vs_remoteness.csv_CA42A6421B634F8A9F33ACC97B1AC085]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Major electrical problems</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Major electrical problems]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Major electrical problems</remote-alias>
+              <ordinal>7</ordinal>
+              <family>structural_problems_vs_remoteness.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[structural_problems_vs_remoteness.csv_CA42A6421B634F8A9F33ACC97B1AC085]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Major plumbing problems</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Major plumbing problems]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Major plumbing problems</remote-alias>
+              <ordinal>8</ordinal>
+              <family>structural_problems_vs_remoteness.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[structural_problems_vs_remoteness.csv_CA42A6421B634F8A9F33ACC97B1AC085]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Major roof defects</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Major roof defects]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Major roof defects</remote-alias>
+              <ordinal>9</ordinal>
+              <family>structural_problems_vs_remoteness.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[structural_problems_vs_remoteness.csv_CA42A6421B634F8A9F33ACC97B1AC085]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Other major structural problems</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Other major structural problems]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Other major structural problems</remote-alias>
+              <ordinal>10</ordinal>
+              <family>structural_problems_vs_remoteness.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[structural_problems_vs_remoteness.csv_CA42A6421B634F8A9F33ACC97B1AC085]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Subtotal major structural problems</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Subtotal major structural problems]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Subtotal major structural problems</remote-alias>
+              <ordinal>11</ordinal>
+              <family>structural_problems_vs_remoteness.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[structural_problems_vs_remoteness.csv_CA42A6421B634F8A9F33ACC97B1AC085]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>No structural problems</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[No structural problems]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>No structural problems</remote-alias>
+              <ordinal>12</ordinal>
+              <family>structural_problems_vs_remoteness.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[structural_problems_vs_remoteness.csv_CA42A6421B634F8A9F33ACC97B1AC085]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F14</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F14]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F14</remote-alias>
+              <ordinal>13</ordinal>
+              <family>structural_problems_vs_remoteness.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[structural_problems_vs_remoteness.csv_CA42A6421B634F8A9F33ACC97B1AC085]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='structural_problems_vs_remoteness.csv' id='structural_problems_vs_remoteness.csv_CA42A6421B634F8A9F33ACC97B1AC085'>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='structural_problems_vs_remoteness (2)' inline='true' name='federated.03rk21p003r7if11wcfeq08xgqej' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='remoteness' name='textscan.1jzgcoo0a4ekve180sluk0kp33mr'>
+            <connection class='textscan' directory='G:/Extras Freelance Work/Work/Somenath Da/IFN585 Tableau Analysis/Copy1' filename='remoteness.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='textscan.1jzgcoo0a4ekve180sluk0kp33mr' name='structural_problems_vs_remoteness.csv' table='[structural_problems_vs_remoteness#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='string' name='Remoteness' ordinal='0' />
+              <column datatype='real' name='Rising damp' ordinal='1' />
+              <column datatype='real' name='Major cracks in walls/floors' ordinal='2' />
+              <column datatype='real' name='Sinking/moving foundations' ordinal='3' />
+              <column datatype='real' name='Sagging floors' ordinal='4' />
+              <column datatype='real' name='Walls or windows not straight' ordinal='5' />
+              <column datatype='real' name='Wood rot/termite damage' ordinal='6' />
+              <column datatype='real' name='Major electrical problems' ordinal='7' />
+              <column datatype='real' name='Major plumbing problems' ordinal='8' />
+              <column datatype='real' name='Major roof defects' ordinal='9' />
+              <column datatype='real' name='Other major structural problems' ordinal='10' />
+              <column datatype='real' name='Subtotal major structural problems' ordinal='11' />
+              <column datatype='real' name='No structural problems' ordinal='12' />
+              <column datatype='string' name='F14' ordinal='13' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1jzgcoo0a4ekve180sluk0kp33mr' name='structural_problems_vs_remoteness.csv1' table='[structural_problems_vs_remoteness#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='string' name='Remoteness' ordinal='0' />
+              <column datatype='real' name='Rising damp' ordinal='1' />
+              <column datatype='real' name='Major cracks in walls/floors' ordinal='2' />
+              <column datatype='real' name='Sinking/moving foundations' ordinal='3' />
+              <column datatype='real' name='Sagging floors' ordinal='4' />
+              <column datatype='real' name='Walls or windows not straight' ordinal='5' />
+              <column datatype='real' name='Wood rot/termite damage' ordinal='6' />
+              <column datatype='real' name='Major electrical problems' ordinal='7' />
+              <column datatype='real' name='Major plumbing problems' ordinal='8' />
+              <column datatype='real' name='Major roof defects' ordinal='9' />
+              <column datatype='real' name='Other major structural problems' ordinal='10' />
+              <column datatype='real' name='Subtotal major structural problems' ordinal='11' />
+              <column datatype='real' name='No structural problems' ordinal='12' />
+              <column datatype='string' name='F14' ordinal='13' />
+            </columns>
+          </relation>
+        </relation>
+        <cols>
+          <map key='[F14 (structural_problems_vs_remoteness.csv1)]' value='[structural_problems_vs_remoteness.csv1].[F14]' />
+          <map key='[F14]' value='[structural_problems_vs_remoteness.csv].[F14]' />
+          <map key='[Major cracks in walls/floors (structural_problems_vs_remoteness.csv1)]' value='[structural_problems_vs_remoteness.csv1].[Major cracks in walls/floors]' />
+          <map key='[Major cracks in walls/floors]' value='[structural_problems_vs_remoteness.csv].[Major cracks in walls/floors]' />
+          <map key='[Major electrical problems (structural_problems_vs_remoteness.csv1)]' value='[structural_problems_vs_remoteness.csv1].[Major electrical problems]' />
+          <map key='[Major electrical problems]' value='[structural_problems_vs_remoteness.csv].[Major electrical problems]' />
+          <map key='[Major plumbing problems (structural_problems_vs_remoteness.csv1)]' value='[structural_problems_vs_remoteness.csv1].[Major plumbing problems]' />
+          <map key='[Major plumbing problems]' value='[structural_problems_vs_remoteness.csv].[Major plumbing problems]' />
+          <map key='[Major roof defects (structural_problems_vs_remoteness.csv1)]' value='[structural_problems_vs_remoteness.csv1].[Major roof defects]' />
+          <map key='[Major roof defects]' value='[structural_problems_vs_remoteness.csv].[Major roof defects]' />
+          <map key='[No structural problems (structural_problems_vs_remoteness.csv1)]' value='[structural_problems_vs_remoteness.csv1].[No structural problems]' />
+          <map key='[No structural problems]' value='[structural_problems_vs_remoteness.csv].[No structural problems]' />
+          <map key='[Other major structural problems (structural_problems_vs_remoteness.csv1)]' value='[structural_problems_vs_remoteness.csv1].[Other major structural problems]' />
+          <map key='[Other major structural problems]' value='[structural_problems_vs_remoteness.csv].[Other major structural problems]' />
+          <map key='[Remoteness (structural_problems_vs_remoteness.csv1)]' value='[structural_problems_vs_remoteness.csv1].[Remoteness]' />
+          <map key='[Remoteness]' value='[structural_problems_vs_remoteness.csv].[Remoteness]' />
+          <map key='[Rising damp (structural_problems_vs_remoteness.csv1)]' value='[structural_problems_vs_remoteness.csv1].[Rising damp]' />
+          <map key='[Rising damp]' value='[structural_problems_vs_remoteness.csv].[Rising damp]' />
+          <map key='[Sagging floors (structural_problems_vs_remoteness.csv1)]' value='[structural_problems_vs_remoteness.csv1].[Sagging floors]' />
+          <map key='[Sagging floors]' value='[structural_problems_vs_remoteness.csv].[Sagging floors]' />
+          <map key='[Sinking/moving foundations (structural_problems_vs_remoteness.csv1)]' value='[structural_problems_vs_remoteness.csv1].[Sinking/moving foundations]' />
+          <map key='[Sinking/moving foundations]' value='[structural_problems_vs_remoteness.csv].[Sinking/moving foundations]' />
+          <map key='[Subtotal major structural problems (structural_problems_vs_remoteness.csv1)]' value='[structural_problems_vs_remoteness.csv1].[Subtotal major structural problems]' />
+          <map key='[Subtotal major structural problems]' value='[structural_problems_vs_remoteness.csv].[Subtotal major structural problems]' />
+          <map key='[Walls or windows not straight (structural_problems_vs_remoteness.csv1)]' value='[structural_problems_vs_remoteness.csv1].[Walls or windows not straight]' />
+          <map key='[Walls or windows not straight]' value='[structural_problems_vs_remoteness.csv].[Walls or windows not straight]' />
+          <map key='[Wood rot/termite damage (structural_problems_vs_remoteness.csv1)]' value='[structural_problems_vs_remoteness.csv1].[Wood rot/termite damage]' />
+          <map key='[Wood rot/termite damage]' value='[structural_problems_vs_remoteness.csv].[Wood rot/termite damage]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[structural_problems_vs_remoteness.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[structural_problems_vs_remoteness.csv1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Remoteness</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Remoteness]</local-name>
+            <parent-name>[structural_problems_vs_remoteness.csv]</parent-name>
+            <remote-alias>Remoteness</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rising damp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Rising damp]</local-name>
+            <parent-name>[structural_problems_vs_remoteness.csv]</parent-name>
+            <remote-alias>Rising damp</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Major cracks in walls/floors</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Major cracks in walls/floors]</local-name>
+            <parent-name>[structural_problems_vs_remoteness.csv]</parent-name>
+            <remote-alias>Major cracks in walls/floors</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sinking/moving foundations</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sinking/moving foundations]</local-name>
+            <parent-name>[structural_problems_vs_remoteness.csv]</parent-name>
+            <remote-alias>Sinking/moving foundations</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sagging floors</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sagging floors]</local-name>
+            <parent-name>[structural_problems_vs_remoteness.csv]</parent-name>
+            <remote-alias>Sagging floors</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Walls or windows not straight</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Walls or windows not straight]</local-name>
+            <parent-name>[structural_problems_vs_remoteness.csv]</parent-name>
+            <remote-alias>Walls or windows not straight</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wood rot/termite damage</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Wood rot/termite damage]</local-name>
+            <parent-name>[structural_problems_vs_remoteness.csv]</parent-name>
+            <remote-alias>Wood rot/termite damage</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Major electrical problems</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Major electrical problems]</local-name>
+            <parent-name>[structural_problems_vs_remoteness.csv]</parent-name>
+            <remote-alias>Major electrical problems</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Major plumbing problems</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Major plumbing problems]</local-name>
+            <parent-name>[structural_problems_vs_remoteness.csv]</parent-name>
+            <remote-alias>Major plumbing problems</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Major roof defects</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Major roof defects]</local-name>
+            <parent-name>[structural_problems_vs_remoteness.csv]</parent-name>
+            <remote-alias>Major roof defects</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Other major structural problems</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Other major structural problems]</local-name>
+            <parent-name>[structural_problems_vs_remoteness.csv]</parent-name>
+            <remote-alias>Other major structural problems</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Subtotal major structural problems</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Subtotal major structural problems]</local-name>
+            <parent-name>[structural_problems_vs_remoteness.csv]</parent-name>
+            <remote-alias>Subtotal major structural problems</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>No structural problems</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[No structural problems]</local-name>
+            <parent-name>[structural_problems_vs_remoteness.csv]</parent-name>
+            <remote-alias>No structural problems</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F14</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F14]</local-name>
+            <parent-name>[structural_problems_vs_remoteness.csv]</parent-name>
+            <remote-alias>F14</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Remoteness</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Remoteness (structural_problems_vs_remoteness.csv1)]</local-name>
+            <parent-name>[structural_problems_vs_remoteness.csv1]</parent-name>
+            <remote-alias>Remoteness</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rising damp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Rising damp (structural_problems_vs_remoteness.csv1)]</local-name>
+            <parent-name>[structural_problems_vs_remoteness.csv1]</parent-name>
+            <remote-alias>Rising damp</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Major cracks in walls/floors</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Major cracks in walls/floors (structural_problems_vs_remoteness.csv1)]</local-name>
+            <parent-name>[structural_problems_vs_remoteness.csv1]</parent-name>
+            <remote-alias>Major cracks in walls/floors</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sinking/moving foundations</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sinking/moving foundations (structural_problems_vs_remoteness.csv1)]</local-name>
+            <parent-name>[structural_problems_vs_remoteness.csv1]</parent-name>
+            <remote-alias>Sinking/moving foundations</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sagging floors</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sagging floors (structural_problems_vs_remoteness.csv1)]</local-name>
+            <parent-name>[structural_problems_vs_remoteness.csv1]</parent-name>
+            <remote-alias>Sagging floors</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Walls or windows not straight</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Walls or windows not straight (structural_problems_vs_remoteness.csv1)]</local-name>
+            <parent-name>[structural_problems_vs_remoteness.csv1]</parent-name>
+            <remote-alias>Walls or windows not straight</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wood rot/termite damage</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Wood rot/termite damage (structural_problems_vs_remoteness.csv1)]</local-name>
+            <parent-name>[structural_problems_vs_remoteness.csv1]</parent-name>
+            <remote-alias>Wood rot/termite damage</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Major electrical problems</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Major electrical problems (structural_problems_vs_remoteness.csv1)]</local-name>
+            <parent-name>[structural_problems_vs_remoteness.csv1]</parent-name>
+            <remote-alias>Major electrical problems</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Major plumbing problems</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Major plumbing problems (structural_problems_vs_remoteness.csv1)]</local-name>
+            <parent-name>[structural_problems_vs_remoteness.csv1]</parent-name>
+            <remote-alias>Major plumbing problems</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Major roof defects</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Major roof defects (structural_problems_vs_remoteness.csv1)]</local-name>
+            <parent-name>[structural_problems_vs_remoteness.csv1]</parent-name>
+            <remote-alias>Major roof defects</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Other major structural problems</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Other major structural problems (structural_problems_vs_remoteness.csv1)]</local-name>
+            <parent-name>[structural_problems_vs_remoteness.csv1]</parent-name>
+            <remote-alias>Other major structural problems</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Subtotal major structural problems</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Subtotal major structural problems (structural_problems_vs_remoteness.csv1)]</local-name>
+            <parent-name>[structural_problems_vs_remoteness.csv1]</parent-name>
+            <remote-alias>Subtotal major structural problems</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>No structural problems</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[No structural problems (structural_problems_vs_remoteness.csv1)]</local-name>
+            <parent-name>[structural_problems_vs_remoteness.csv1]</parent-name>
+            <remote-alias>No structural problems</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F14</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F14 (structural_problems_vs_remoteness.csv1)]</local-name>
+            <parent-name>[structural_problems_vs_remoteness.csv1]</parent-name>
+            <remote-alias>F14</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='F14 (structural problems vs remoteness.csv1)' datatype='string' name='[F14 (structural_problems_vs_remoteness.csv1)]' role='dimension' type='nominal' />
+      <column caption='Major cracks in walls/floors (structural problems vs remoteness.csv1)' datatype='real' name='[Major cracks in walls/floors (structural_problems_vs_remoteness.csv1)]' role='measure' type='quantitative' />
+      <column caption='Major electrical problems (structural problems vs remoteness.csv1)' datatype='real' name='[Major electrical problems (structural_problems_vs_remoteness.csv1)]' role='measure' type='quantitative' />
+      <column caption='Major plumbing problems (structural problems vs remoteness.csv1)' datatype='real' name='[Major plumbing problems (structural_problems_vs_remoteness.csv1)]' role='measure' type='quantitative' />
+      <column caption='Major roof defects (structural problems vs remoteness.csv1)' datatype='real' name='[Major roof defects (structural_problems_vs_remoteness.csv1)]' role='measure' type='quantitative' />
+      <column caption='No structural problems (structural problems vs remoteness.csv1)' datatype='real' name='[No structural problems (structural_problems_vs_remoteness.csv1)]' role='measure' type='quantitative' />
+      <column caption='Other major structural problems (structural problems vs remoteness.csv1)' datatype='real' name='[Other major structural problems (structural_problems_vs_remoteness.csv1)]' role='measure' type='quantitative' />
+      <column caption='Remoteness (structural problems vs remoteness.csv1)' datatype='string' name='[Remoteness (structural_problems_vs_remoteness.csv1)]' role='dimension' type='nominal' />
+      <column caption='Rising damp (structural problems vs remoteness.csv1)' datatype='real' name='[Rising damp (structural_problems_vs_remoteness.csv1)]' role='measure' type='quantitative' />
+      <column caption='Sagging floors (structural problems vs remoteness.csv1)' datatype='real' name='[Sagging floors (structural_problems_vs_remoteness.csv1)]' role='measure' type='quantitative' />
+      <column caption='Sinking/moving foundations (structural problems vs remoteness.csv1)' datatype='real' name='[Sinking/moving foundations (structural_problems_vs_remoteness.csv1)]' role='measure' type='quantitative' />
+      <column caption='Subtotal major structural problems (structural problems vs remoteness.csv1)' datatype='real' name='[Subtotal major structural problems (structural_problems_vs_remoteness.csv1)]' role='measure' type='quantitative' />
+      <column caption='Walls or windows not straight (structural problems vs remoteness.csv1)' datatype='real' name='[Walls or windows not straight (structural_problems_vs_remoteness.csv1)]' role='measure' type='quantitative' />
+      <column caption='Wood rot/termite damage (structural problems vs remoteness.csv1)' datatype='real' name='[Wood rot/termite damage (structural_problems_vs_remoteness.csv1)]' role='measure' type='quantitative' />
+      <column caption='structural_problems_vs_remoteness.csv1' datatype='table' name='[__tableau_internal_object_id__].[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD]' role='measure' type='quantitative' />
+      <column caption='structural_problems_vs_remoteness.csv' datatype='table' name='[__tableau_internal_object_id__].[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/sapch/AppData/Local/Temp/TableauTemp/#TableauTemp_1deox6o1hvxh2d0zk6rpi11qsqzs.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='03/19/2025 08:10:52 PM' username='tableau_internal_user'>
+          <relation type='collection'>
+            <relation name='structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56' table='[Extract].[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56]' type='table' />
+            <relation name='structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD' table='[Extract].[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD]' type='table' />
+          </relation>
+          <cols>
+            <map key='[F14 (structural_problems_vs_remoteness.csv1)]' value='[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD].[F14]' />
+            <map key='[F14]' value='[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56].[F14]' />
+            <map key='[Major cracks in walls/floors (structural_problems_vs_remoteness.csv1)]' value='[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD].[Major cracks in walls/floors]' />
+            <map key='[Major cracks in walls/floors]' value='[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56].[Major cracks in walls/floors]' />
+            <map key='[Major electrical problems (structural_problems_vs_remoteness.csv1)]' value='[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD].[Major electrical problems]' />
+            <map key='[Major electrical problems]' value='[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56].[Major electrical problems]' />
+            <map key='[Major plumbing problems (structural_problems_vs_remoteness.csv1)]' value='[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD].[Major plumbing problems]' />
+            <map key='[Major plumbing problems]' value='[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56].[Major plumbing problems]' />
+            <map key='[Major roof defects (structural_problems_vs_remoteness.csv1)]' value='[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD].[Major roof defects]' />
+            <map key='[Major roof defects]' value='[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56].[Major roof defects]' />
+            <map key='[No structural problems (structural_problems_vs_remoteness.csv1)]' value='[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD].[No structural problems]' />
+            <map key='[No structural problems]' value='[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56].[No structural problems]' />
+            <map key='[Other major structural problems (structural_problems_vs_remoteness.csv1)]' value='[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD].[Other major structural problems]' />
+            <map key='[Other major structural problems]' value='[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56].[Other major structural problems]' />
+            <map key='[Remoteness (structural_problems_vs_remoteness.csv1)]' value='[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD].[Remoteness]' />
+            <map key='[Remoteness]' value='[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56].[Remoteness]' />
+            <map key='[Rising damp (structural_problems_vs_remoteness.csv1)]' value='[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD].[Rising damp]' />
+            <map key='[Rising damp]' value='[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56].[Rising damp]' />
+            <map key='[Sagging floors (structural_problems_vs_remoteness.csv1)]' value='[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD].[Sagging floors]' />
+            <map key='[Sagging floors]' value='[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56].[Sagging floors]' />
+            <map key='[Sinking/moving foundations (structural_problems_vs_remoteness.csv1)]' value='[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD].[Sinking/moving foundations]' />
+            <map key='[Sinking/moving foundations]' value='[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56].[Sinking/moving foundations]' />
+            <map key='[Subtotal major structural problems (structural_problems_vs_remoteness.csv1)]' value='[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD].[Subtotal major structural problems]' />
+            <map key='[Subtotal major structural problems]' value='[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56].[Subtotal major structural problems]' />
+            <map key='[Walls or windows not straight (structural_problems_vs_remoteness.csv1)]' value='[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD].[Walls or windows not straight]' />
+            <map key='[Walls or windows not straight]' value='[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56].[Walls or windows not straight]' />
+            <map key='[Wood rot/termite damage (structural_problems_vs_remoteness.csv1)]' value='[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD].[Wood rot/termite damage]' />
+            <map key='[Wood rot/termite damage]' value='[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56].[Wood rot/termite damage]' />
+          </cols>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Remoteness</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Remoteness]</local-name>
+              <parent-name>[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56]</parent-name>
+              <remote-alias>Remoteness</remote-alias>
+              <ordinal>0</ordinal>
+              <family>structural_problems_vs_remoteness.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Rising damp</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Rising damp]</local-name>
+              <parent-name>[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56]</parent-name>
+              <remote-alias>Rising damp</remote-alias>
+              <ordinal>1</ordinal>
+              <family>structural_problems_vs_remoteness.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Major cracks in walls/floors</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Major cracks in walls/floors]</local-name>
+              <parent-name>[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56]</parent-name>
+              <remote-alias>Major cracks in walls/floors</remote-alias>
+              <ordinal>2</ordinal>
+              <family>structural_problems_vs_remoteness.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sinking/moving foundations</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Sinking/moving foundations]</local-name>
+              <parent-name>[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56]</parent-name>
+              <remote-alias>Sinking/moving foundations</remote-alias>
+              <ordinal>3</ordinal>
+              <family>structural_problems_vs_remoteness.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sagging floors</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Sagging floors]</local-name>
+              <parent-name>[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56]</parent-name>
+              <remote-alias>Sagging floors</remote-alias>
+              <ordinal>4</ordinal>
+              <family>structural_problems_vs_remoteness.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Walls or windows not straight</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Walls or windows not straight]</local-name>
+              <parent-name>[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56]</parent-name>
+              <remote-alias>Walls or windows not straight</remote-alias>
+              <ordinal>5</ordinal>
+              <family>structural_problems_vs_remoteness.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Wood rot/termite damage</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Wood rot/termite damage]</local-name>
+              <parent-name>[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56]</parent-name>
+              <remote-alias>Wood rot/termite damage</remote-alias>
+              <ordinal>6</ordinal>
+              <family>structural_problems_vs_remoteness.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Major electrical problems</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Major electrical problems]</local-name>
+              <parent-name>[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56]</parent-name>
+              <remote-alias>Major electrical problems</remote-alias>
+              <ordinal>7</ordinal>
+              <family>structural_problems_vs_remoteness.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Major plumbing problems</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Major plumbing problems]</local-name>
+              <parent-name>[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56]</parent-name>
+              <remote-alias>Major plumbing problems</remote-alias>
+              <ordinal>8</ordinal>
+              <family>structural_problems_vs_remoteness.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Major roof defects</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Major roof defects]</local-name>
+              <parent-name>[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56]</parent-name>
+              <remote-alias>Major roof defects</remote-alias>
+              <ordinal>9</ordinal>
+              <family>structural_problems_vs_remoteness.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Other major structural problems</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Other major structural problems]</local-name>
+              <parent-name>[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56]</parent-name>
+              <remote-alias>Other major structural problems</remote-alias>
+              <ordinal>10</ordinal>
+              <family>structural_problems_vs_remoteness.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Subtotal major structural problems</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Subtotal major structural problems]</local-name>
+              <parent-name>[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56]</parent-name>
+              <remote-alias>Subtotal major structural problems</remote-alias>
+              <ordinal>11</ordinal>
+              <family>structural_problems_vs_remoteness.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>No structural problems</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[No structural problems]</local-name>
+              <parent-name>[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56]</parent-name>
+              <remote-alias>No structural problems</remote-alias>
+              <ordinal>12</ordinal>
+              <family>structural_problems_vs_remoteness.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F14</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F14]</local-name>
+              <parent-name>[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56]</parent-name>
+              <remote-alias>F14</remote-alias>
+              <ordinal>13</ordinal>
+              <family>structural_problems_vs_remoteness.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Remoteness</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Remoteness (structural_problems_vs_remoteness.csv1)]</local-name>
+              <parent-name>[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD]</parent-name>
+              <remote-alias>Remoteness</remote-alias>
+              <ordinal>14</ordinal>
+              <family>structural_problems_vs_remoteness.csv1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Rising damp</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Rising damp (structural_problems_vs_remoteness.csv1)]</local-name>
+              <parent-name>[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD]</parent-name>
+              <remote-alias>Rising damp</remote-alias>
+              <ordinal>15</ordinal>
+              <family>structural_problems_vs_remoteness.csv1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Major cracks in walls/floors</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Major cracks in walls/floors (structural_problems_vs_remoteness.csv1)]</local-name>
+              <parent-name>[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD]</parent-name>
+              <remote-alias>Major cracks in walls/floors</remote-alias>
+              <ordinal>16</ordinal>
+              <family>structural_problems_vs_remoteness.csv1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sinking/moving foundations</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Sinking/moving foundations (structural_problems_vs_remoteness.csv1)]</local-name>
+              <parent-name>[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD]</parent-name>
+              <remote-alias>Sinking/moving foundations</remote-alias>
+              <ordinal>17</ordinal>
+              <family>structural_problems_vs_remoteness.csv1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sagging floors</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Sagging floors (structural_problems_vs_remoteness.csv1)]</local-name>
+              <parent-name>[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD]</parent-name>
+              <remote-alias>Sagging floors</remote-alias>
+              <ordinal>18</ordinal>
+              <family>structural_problems_vs_remoteness.csv1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Walls or windows not straight</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Walls or windows not straight (structural_problems_vs_remoteness.csv1)]</local-name>
+              <parent-name>[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD]</parent-name>
+              <remote-alias>Walls or windows not straight</remote-alias>
+              <ordinal>19</ordinal>
+              <family>structural_problems_vs_remoteness.csv1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Wood rot/termite damage</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Wood rot/termite damage (structural_problems_vs_remoteness.csv1)]</local-name>
+              <parent-name>[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD]</parent-name>
+              <remote-alias>Wood rot/termite damage</remote-alias>
+              <ordinal>20</ordinal>
+              <family>structural_problems_vs_remoteness.csv1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Major electrical problems</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Major electrical problems (structural_problems_vs_remoteness.csv1)]</local-name>
+              <parent-name>[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD]</parent-name>
+              <remote-alias>Major electrical problems</remote-alias>
+              <ordinal>21</ordinal>
+              <family>structural_problems_vs_remoteness.csv1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Major plumbing problems</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Major plumbing problems (structural_problems_vs_remoteness.csv1)]</local-name>
+              <parent-name>[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD]</parent-name>
+              <remote-alias>Major plumbing problems</remote-alias>
+              <ordinal>22</ordinal>
+              <family>structural_problems_vs_remoteness.csv1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Major roof defects</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Major roof defects (structural_problems_vs_remoteness.csv1)]</local-name>
+              <parent-name>[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD]</parent-name>
+              <remote-alias>Major roof defects</remote-alias>
+              <ordinal>23</ordinal>
+              <family>structural_problems_vs_remoteness.csv1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Other major structural problems</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Other major structural problems (structural_problems_vs_remoteness.csv1)]</local-name>
+              <parent-name>[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD]</parent-name>
+              <remote-alias>Other major structural problems</remote-alias>
+              <ordinal>24</ordinal>
+              <family>structural_problems_vs_remoteness.csv1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Subtotal major structural problems</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Subtotal major structural problems (structural_problems_vs_remoteness.csv1)]</local-name>
+              <parent-name>[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD]</parent-name>
+              <remote-alias>Subtotal major structural problems</remote-alias>
+              <ordinal>25</ordinal>
+              <family>structural_problems_vs_remoteness.csv1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>No structural problems</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[No structural problems (structural_problems_vs_remoteness.csv1)]</local-name>
+              <parent-name>[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD]</parent-name>
+              <remote-alias>No structural problems</remote-alias>
+              <ordinal>26</ordinal>
+              <family>structural_problems_vs_remoteness.csv1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F14</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F14 (structural_problems_vs_remoteness.csv1)]</local-name>
+              <parent-name>[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD]</parent-name>
+              <remote-alias>F14</remote-alias>
+              <ordinal>27</ordinal>
+              <family>structural_problems_vs_remoteness.csv1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='structural_problems_vs_remoteness.csv1' id='structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD'>
+            <properties context=''>
+              <relation connection='textscan.1jzgcoo0a4ekve180sluk0kp33mr' name='structural_problems_vs_remoteness.csv1' table='[structural_problems_vs_remoteness#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='Remoteness' ordinal='0' />
+                  <column datatype='real' name='Rising damp' ordinal='1' />
+                  <column datatype='real' name='Major cracks in walls/floors' ordinal='2' />
+                  <column datatype='real' name='Sinking/moving foundations' ordinal='3' />
+                  <column datatype='real' name='Sagging floors' ordinal='4' />
+                  <column datatype='real' name='Walls or windows not straight' ordinal='5' />
+                  <column datatype='real' name='Wood rot/termite damage' ordinal='6' />
+                  <column datatype='real' name='Major electrical problems' ordinal='7' />
+                  <column datatype='real' name='Major plumbing problems' ordinal='8' />
+                  <column datatype='real' name='Major roof defects' ordinal='9' />
+                  <column datatype='real' name='Other major structural problems' ordinal='10' />
+                  <column datatype='real' name='Subtotal major structural problems' ordinal='11' />
+                  <column datatype='real' name='No structural problems' ordinal='12' />
+                  <column datatype='string' name='F14' ordinal='13' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD' table='[Extract].[structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD]' type='table' />
+            </properties>
+          </object>
+          <object caption='structural_problems_vs_remoteness.csv' id='structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56'>
+            <properties context=''>
+              <relation connection='textscan.1jzgcoo0a4ekve180sluk0kp33mr' name='structural_problems_vs_remoteness.csv' table='[structural_problems_vs_remoteness#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='Remoteness' ordinal='0' />
+                  <column datatype='real' name='Rising damp' ordinal='1' />
+                  <column datatype='real' name='Major cracks in walls/floors' ordinal='2' />
+                  <column datatype='real' name='Sinking/moving foundations' ordinal='3' />
+                  <column datatype='real' name='Sagging floors' ordinal='4' />
+                  <column datatype='real' name='Walls or windows not straight' ordinal='5' />
+                  <column datatype='real' name='Wood rot/termite damage' ordinal='6' />
+                  <column datatype='real' name='Major electrical problems' ordinal='7' />
+                  <column datatype='real' name='Major plumbing problems' ordinal='8' />
+                  <column datatype='real' name='Major roof defects' ordinal='9' />
+                  <column datatype='real' name='Other major structural problems' ordinal='10' />
+                  <column datatype='real' name='Subtotal major structural problems' ordinal='11' />
+                  <column datatype='real' name='No structural problems' ordinal='12' />
+                  <column datatype='string' name='F14' ordinal='13' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56' table='[Extract].[structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[]' />
+              <expression op='[]' />
+            </expression>
+            <first-end-point object-id='structural_problems_vs_remoteness.csv_5D1C550CE8824DCB956A088E230CFA56' />
+            <second-end-point object-id='structural_problems_vs_remoteness.csv_14D130B17422414C9494CF9BF49E5BDD' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+    <datasource caption='remoteness' inline='true' name='federated.12vx60t1fgetz91azehng1g9oig5' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='remoteness' name='textscan.11ydf9u0c6krwo19c8fh716nfw5d'>
+            <connection class='textscan' directory='G:/Extras Freelance Work/Work/Somenath Da/IFN585 Tableau Analysis/Copy1' filename='remoteness.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.11ydf9u0c6krwo19c8fh716nfw5d' name='remoteness.csv' table='[remoteness#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='Remoteness' ordinal='0' />
+            <column datatype='string' name='Condition' ordinal='1' />
+            <column datatype='real' name='Estimate' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[remoteness.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Remoteness</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Remoteness]</local-name>
+            <parent-name>[remoteness.csv]</parent-name>
+            <remote-alias>Remoteness</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[remoteness.csv_E1A260BFA1364198A03E1121A8F5A6F7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Condition</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Condition]</local-name>
+            <parent-name>[remoteness.csv]</parent-name>
+            <remote-alias>Condition</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[remoteness.csv_E1A260BFA1364198A03E1121A8F5A6F7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Estimate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Estimate]</local-name>
+            <parent-name>[remoteness.csv]</parent-name>
+            <remote-alias>Estimate</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[remoteness.csv_E1A260BFA1364198A03E1121A8F5A6F7]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Condition]' role='dimension' type='nominal' />
+      <column caption='remoteness.csv' datatype='table' name='[__tableau_internal_object_id__].[remoteness.csv_E1A260BFA1364198A03E1121A8F5A6F7]' role='measure' type='quantitative' />
+      <column-instance column='[Condition]' derivation='None' name='[none:Condition:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/sapch/AppData/Local/Temp/TableauTemp/#TableauTemp_0jf8tu71f4bdms10w0b4k0dec8yt.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='03/19/2025 08:14:08 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Remoteness</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Remoteness]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Remoteness</remote-alias>
+              <ordinal>0</ordinal>
+              <family>remoteness.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[remoteness.csv_E1A260BFA1364198A03E1121A8F5A6F7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Condition</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Condition]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Condition</remote-alias>
+              <ordinal>1</ordinal>
+              <family>remoteness.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[remoteness.csv_E1A260BFA1364198A03E1121A8F5A6F7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Estimate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Estimate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Estimate</remote-alias>
+              <ordinal>2</ordinal>
+              <family>remoteness.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>55</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[remoteness.csv_E1A260BFA1364198A03E1121A8F5A6F7]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Condition:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Sinking/moving foundations&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Major cracks in walls/floors&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;No structural problems&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Subtotal major structural problems&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Other major structural problems&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Major electrical problems&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Rising damp&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Walls or windows not straight&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Sagging floors&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Major plumbing problems&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Wood rot/termite damage&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Major roof defects&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='remoteness.csv' id='remoteness.csv_E1A260BFA1364198A03E1121A8F5A6F7'>
+            <properties context=''>
+              <relation connection='textscan.11ydf9u0c6krwo19c8fh716nfw5d' name='remoteness.csv' table='[remoteness#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='Remoteness' ordinal='0' />
+                  <column datatype='string' name='Condition' ordinal='1' />
+                  <column datatype='real' name='Estimate' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Remoteness and Structural Problems'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='remoteness' name='federated.12vx60t1fgetz91azehng1g9oig5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.12vx60t1fgetz91azehng1g9oig5'>
+            <column datatype='string' name='[Condition]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Estimate]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Remoteness]' role='dimension' type='nominal' />
+            <column-instance column='[Condition]' derivation='None' name='[none:Condition:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Remoteness]' derivation='None' name='[none:Remoteness:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Estimate]' derivation='Sum' name='[sum:Estimate:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.12vx60t1fgetz91azehng1g9oig5].[none:Condition:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Condition:nk]' />
+              <groupfilter function='member' level='[none:Condition:nk]' member='&quot;Subtotal major structural problems&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.12vx60t1fgetz91azehng1g9oig5].[none:Remoteness:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Remoteness:nk]' />
+              <groupfilter function='member' level='[none:Remoteness:nk]' member='&quot;Total non-remote&quot;' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.12vx60t1fgetz91azehng1g9oig5].[none:Condition:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.12vx60t1fgetz91azehng1g9oig5].[sum:Estimate:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.12vx60t1fgetz91azehng1g9oig5].[none:Remoteness:nk]</column>
+            <column>[federated.12vx60t1fgetz91azehng1g9oig5].[none:Condition:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.12vx60t1fgetz91azehng1g9oig5].[none:Condition:nk]' value='89' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.12vx60t1fgetz91azehng1g9oig5].[none:Condition:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.12vx60t1fgetz91azehng1g9oig5].[none:Remoteness:nk] * [federated.12vx60t1fgetz91azehng1g9oig5].[sum:Estimate:qk])</rows>
+        <cols>[federated.12vx60t1fgetz91azehng1g9oig5].[none:Condition:nk]</cols>
+      </table>
+      <simple-id uuid='{1728232D-1333-492E-9102-07379E6D6BA2}' />
+    </worksheet>
+    <worksheet name='Weekly Income'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Median weekly income' name='federated.1tdzc7f0gwuqau1h64ivt0w4xe18' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1tdzc7f0gwuqau1h64ivt0w4xe18'>
+            <column datatype='integer' name='[Income]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Income]' derivation='Sum' name='[sum:Income:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1tdzc7f0gwuqau1h64ivt0w4xe18].[none:State:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1tdzc7f0gwuqau1h64ivt0w4xe18].[sum:Income:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1tdzc7f0gwuqau1h64ivt0w4xe18].[none:State:nk]' value='110' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1tdzc7f0gwuqau1h64ivt0w4xe18].[none:Year:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1tdzc7f0gwuqau1h64ivt0w4xe18].[sum:Income:qk]</rows>
+        <cols>[federated.1tdzc7f0gwuqau1h64ivt0w4xe18].[none:State:nk]</cols>
+      </table>
+      <simple-id uuid='{768B74BE-2306-4880-8FB8-B1570E930301}' />
+    </worksheet>
+    <worksheet name='Weekly Rental'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Median weekly rent' name='federated.07lkd1p1cqo5et1gajgvz1k3pzeq' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.07lkd1p1cqo5et1gajgvz1k3pzeq'>
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column caption='Rental' datatype='integer' name='[Value]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Value]' derivation='Sum' name='[sum:Value:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.07lkd1p1cqo5et1gajgvz1k3pzeq].[none:State:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.07lkd1p1cqo5et1gajgvz1k3pzeq].[sum:Value:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.07lkd1p1cqo5et1gajgvz1k3pzeq].[none:State:nk]' value='94' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.07lkd1p1cqo5et1gajgvz1k3pzeq].[none:Year:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.07lkd1p1cqo5et1gajgvz1k3pzeq].[sum:Value:qk]</rows>
+        <cols>([federated.07lkd1p1cqo5et1gajgvz1k3pzeq].[none:State:nk] * [federated.07lkd1p1cqo5et1gajgvz1k3pzeq].[none:Year:qk])</cols>
+        <show-full-range>
+          <column>[federated.07lkd1p1cqo5et1gajgvz1k3pzeq].[Rental (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{EA0D4933-E2AE-40EC-B6A1-9343A3236064}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98130' id='7' param='horz' type-v2='layout-flow' w='99064' x='468' y='935'>
+            <zone h='98130' id='5' type-v2='layout-basic' w='74488' x='468' y='935'>
+              <zone h='49065' id='3' name='Weekly Rental' w='74488' x='468' y='935'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49065' id='11' name='Remoteness and Structural Problems' w='74488' x='468' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='420' h='98130' id='13' is-fixed='true' type-v2='layout-basic' w='24576' x='74956' y='935'>
+              <zone h='49065' id='6' param='vert' type-v2='layout-flow' w='24576' x='74956' y='935'>
+                <zone h='40537' id='9' name='Weekly Income' w='24576' x='74956' y='935'>
+                  <layout-cache cell-count-w='9' minheight='203' non-cell-size-w='66' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='65' h='8528' id='10' is-fixed='true' name='Weekly Income' pane-specification-id='0' param='[federated.1tdzc7f0gwuqau1h64ivt0w4xe18].[none:Year:qk]' type-v2='color' w='24576' x='74956' y='41472'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone h='49065' id='14' param='vert' type-v2='layout-flow' w='24576' x='74956' y='50000'>
+                <zone fixed-size='380' h='45328' id='12' is-fixed='true' name='Remoteness and Structural Problems' pane-specification-id='0' param='[federated.12vx60t1fgetz91azehng1g9oig5].[none:Condition:nk]' type-v2='color' w='24576' x='74956' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='8879' id='8' name='Weekly Rental' pane-specification-id='2' param='[federated.07lkd1p1cqo5et1gajgvz1k3pzeq].[none:Year:qk]' type-v2='color' w='23113' x='14862' y='32009' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1100' minheight='1100' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='18' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98130' id='17' param='vert' type-v2='layout-flow' w='99064' x='468' y='935'>
+                <zone fixed-size='280' h='49065' id='3' is-fixed='true' name='Weekly Rental' w='74488' x='468' y='935'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8879' id='8' name='Weekly Rental' pane-specification-id='2' param='[federated.07lkd1p1cqo5et1gajgvz1k3pzeq].[none:Year:qk]' type-v2='color' w='23113' x='14862' y='32009'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='40537' id='9' is-fixed='true' name='Weekly Income' w='24576' x='74956' y='935'>
+                  <layout-cache cell-count-w='9' minheight='203' non-cell-size-w='66' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='65' h='8528' id='10' name='Weekly Income' pane-specification-id='0' param='[federated.1tdzc7f0gwuqau1h64ivt0w4xe18].[none:Year:qk]' type-v2='color' w='24576' x='74956' y='41472'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49065' id='11' is-fixed='true' name='Remoteness and Structural Problems' w='74488' x='468' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='380' h='45328' id='12' name='Remoteness and Structural Problems' pane-specification-id='0' param='[federated.12vx60t1fgetz91azehng1g9oig5].[none:Condition:nk]' type-v2='color' w='24576' x='74956' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{1E52EA58-4347-40BA-BEB6-166E81F5097A}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='114'>
+    <window class='worksheet' maximized='true' name='Weekly Rental'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.07lkd1p1cqo5et1gajgvz1k3pzeq].[none:Year:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.07lkd1p1cqo5et1gajgvz1k3pzeq].[none:State:nk]</field>
+            <field>[federated.07lkd1p1cqo5et1gajgvz1k3pzeq].[none:Year:qk]</field>
+            <field>[federated.07lkd1p1cqo5et1gajgvz1k3pzeq].[sum:Value:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{1E079038-EB33-4517-8AD2-C859AD8A4280}' />
+    </window>
+    <window class='worksheet' name='Weekly Income'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1tdzc7f0gwuqau1h64ivt0w4xe18].[none:Year:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1tdzc7f0gwuqau1h64ivt0w4xe18].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{ECF6498B-7899-4E4D-A120-9F80BEAB891C}' />
+    </window>
+    <window class='worksheet' name='Remoteness and Structural Problems'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='300'>
+            <card pane-specification-id='0' param='[federated.12vx60t1fgetz91azehng1g9oig5].[none:Condition:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.12vx60t1fgetz91azehng1g9oig5].[:Measure Names]</field>
+            <field>[federated.12vx60t1fgetz91azehng1g9oig5].[none:Condition:nk]</field>
+            <field>[federated.12vx60t1fgetz91azehng1g9oig5].[none:Remoteness:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D707808B-69C7-463F-BBB0-12A18F9E1615}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Remoteness and Structural Problems'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.12vx60t1fgetz91azehng1g9oig5].[none:Condition:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Weekly Income'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Weekly Rental'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{72DF333C-CB76-4C1F-8634-F49B29664F4E}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      rQYkuIA3EkkAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Remoteness and Structural Problems' width='192'>
+      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
+      gg==
+    </thumbnail>
+    <thumbnail height='192' name='Weekly Income' width='192'>
+      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
+      HW3EsyMI//gXEmmNPGE6dnAAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Weekly Rental' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
